@@ -114,9 +114,9 @@ CAPTION "About CurveSnap"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     PUSHBUTTON      "OK",IDOK,188,7,34,14
-    LTEXT           "Based on:\r\n      OpenCV 2.4.3\r\n      High-speed Charting Control\r\n      Visual C++ 2005\r\n      ALGLIB 3.8.0",IDC_STATIC,79,18,106,42,0,WS_EX_TRANSPARENT
+    LTEXT           "Based on:\r\n      OpenCV 2.4.9\r\n      High-speed Charting Control\r\n      Visual C++ 2010\r\n      ALGLIB 3.8.0",IDC_STATIC,79,18,106,42,0,WS_EX_TRANSPARENT
     LTEXT           "CurveSnap V1.1",IDC_STATIC,79,7,80,8,SS_NOPREFIX
-    LTEXT           "Email xoofee to get the source for free",IDC_STATIC,79,59,126,8
+    LTEXT           "https://github.com/xoofee/CurveSnap",IDC_STATIC,79,59,126,8
     LTEXT           "xoofee@gmail.com",IDC_STATIC,11,70,62,8
     CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,11,10,59,55
     LTEXT           "Welcome advice and bugs feedback",IDC_STATIC,79,70,115,8
