@@ -1,0 +1,17 @@
+/bin/Debug/CurveSnap.exe.manifest
+/bin/Debug/CurveSnap.ilk
+/bin/Debug/CurveSnap.pdb
+/bin/Debug/opencv_core249d.dll
+/bin/Debug/opencv_highgui249d.dll
+/bin/Debug/opencv_imgproc249d.dll
+/bin/Debug/CurveSnap.exe
+/bin/Release/CurveSnap.exe
+/bin/Release/CurveSnap.pdb
+/bin/Release/opencv_core249.dll
+/bin/Release/opencv_highgui249.dll
+/bin/Release/opencv_imgproc249.dll
+/obj
+/src/ipch
+/src/*.sdf
+/src/*.suo
+*.user

@@ -1,0 +1,501 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\CurveSnap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CurveSnap.ico"
+IDR_CurveSnapTYPE       ICON                    "res\\CurveSnapDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_FULLSCREEN   BITMAP                  "res\\fullscreen.bmp"
+IDB_BITMAP_FULLSCREEN_DOWN BITMAP                  "res\\fullscreen_down.bmp"
+IDB_BITMAP_PLOT         BITMAP                  "res\\plot.bmp"
+IDB_BITMAP_XOOFEE89     BITMAP                  "res\\xoofee89.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 229, 85
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CurveSnap"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,188,7,34,14
+    LTEXT           "Based on:\r\n      OpenCV 2.4.3\r\n      High-speed Charting Control\r\n      Visual C++ 2005\r\n      ALGLIB 3.8.0",IDC_STATIC,79,18,106,42,0,WS_EX_TRANSPARENT
+    LTEXT           "CurveSnap V1.1",IDC_STATIC,79,7,80,8,SS_NOPREFIX
+    LTEXT           "Email xoofee to get the source for free",IDC_STATIC,79,59,126,8
+    LTEXT           "xoofee@gmail.com",IDC_STATIC,11,70,62,8
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,11,10,59,55
+    LTEXT           "Welcome advice and bugs feedback",IDC_STATIC,79,70,115,8
+END
+
+IDD_DIALOG_COORD DIALOGEX 0, 0, 249, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Coordinates"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_X,180,7,62,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y,180,27,62,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,169,129,33,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,129,33,14
+    LTEXT           "x",IDC_STATIC,168,9,8,8
+    LTEXT           "y",IDC_STATIC,167,30,8,8
+    CONTROL         "",IDC_PIC,"Static",SS_BLACKFRAME,7,7,150,136
+    PUSHBUTTON      "U",IDC_BTN_UP,195,68,12,11
+    PUSHBUTTON      "L",IDC_BTN_LEFT,181,81,12,11
+    PUSHBUTTON      "D",IDC_BTN_DOWN,195,94,12,11
+    PUSHBUTTON      "R",IDC_BTN_RIGHT,209,81,12,11
+END
+
+IDD_DIALOG_CURVE DIALOGEX 0, 0, 294, 185
+STYLE DS_SETFONT | DS_NOIDLEMSG | DS_FIXEDSYS | DS_NOFAILCREATE | DS_CENTER | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Curve"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Custom1",IDC_CHART,"ChartCtrl",WS_CLIPCHILDREN | WS_TABSTOP,31,22,216,141
+END
+
+IDD_DIALOG_TEXT_DATA DIALOGEX 0, 0, 390, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Copy",IDC_BTN_COPY,133,194,34,14
+    PUSHBUTTON      "&Save",IDC_BTN_SAVE,133,147,34,14
+    CONTROL         "TAB (     )",IDC_RADIO_TAB,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,127,17,46,10
+    CONTROL         "Space ( )",IDC_RADIO_SPACE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,127,30,45,10
+    CONTROL         "Comma (,)",IDC_RADIO_COMMA,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,127,43,49,10
+    EDITTEXT        IDC_EDIT_DATA,7,7,107,52,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_SPIN_INTERVAL,"msctls_updown32",UDS_ARROWKEYS | WS_TABSTOP,98,85,11,14
+    EDITTEXT        IDC_EDIT_INTERVAL,62,85,30,14,ES_AUTOHSCROLL
+    GROUPBOX        "Separator",IDC_STATIC,120,3,63,56,WS_GROUP | WS_TABSTOP
+    LTEXT           "output/origianl points:",IDC_STATIC,7,215,72,8
+    LTEXT           "out/total",IDC_STATIC_POINTS_NUM,86,215,37,8
+    LTEXT           "cp status",IDC_STATIC_COPY_STATUS,135,215,32,8,0,WS_EX_RIGHT
+    CONTROL         "Chart",IDC_OUT_CHART,"ChartCtrl",WS_CLIPCHILDREN | WS_TABSTOP,189,7,194,216
+    LTEXT           "Interval:",IDC_LABEL_INTERVAL,28,88,29,8
+    PUSHBUTTON      "Close",IDOK,133,126,34,14
+    GROUPBOX        "X Ticks",IDC_STATIC,7,64,107,144,WS_GROUP | WS_TABSTOP
+    CONTROL         "Original Pixels",IDC_RADIO_XTICK_PIXELS,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,75,60,10
+    CONTROL         "Linearly Spaced",IDC_RADIO_XTICK_LINESPACE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,15,102,66,10
+    EDITTEXT        IDC_EDIT_LINSPACE_MIN,53,114,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Min",IDC_LABEL_LS_MIN,36,117,12,8,WS_DISABLED
+    EDITTEXT        IDC_EDIT_LINSPACE_STEP,53,131,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Step",IDC_LABEL_LS_STEP,32,134,16,8,WS_DISABLED
+    EDITTEXT        IDC_EDIT_LINSPACE_MAX,53,147,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Max",IDC_LABEL_LS_MAX,34,151,14,8,WS_DISABLED
+    GROUPBOX        "Interpolation Method",IDC_GROUP_INTERP_METHOD,25,164,83,37,WS_DISABLED
+    CONTROL         "Linear",IDC_RADIO_INTERP_LINEAR,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,30,175,35,10
+    CONTROL         "Monotone Spline",IDC_RADIO_INTERP_MONO_SPLINE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,30,187,69,10
+    PUSHBUTTON      "Update",IDC_BTN_UPDATE,133,168,34,14,WS_DISABLED
+    GROUPBOX        "Output Precision",IDC_STATIC,120,64,64,54
+    EDITTEXT        IDC_EDIT_PRECISION_X,138,80,20,14,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,129,82,8,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_PRECISION_Y,138,97,20,14,ES_AUTOHSCROLL
+    LTEXT           "y",IDC_STATIC,129,99,8,8,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_CHECK_PRECISION_FIXED_X,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,164,83,12,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_CHECK_PRECISION_FIXED_Y,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,164,99,12,10,WS_EX_TRANSPARENT
+    LTEXT           "fixed",IDC_STATIC,161,75,17,8
+    LTEXT           "(press enter)",IDC_LABEL_UPDATE_ENTER,130,182,43,8,WS_DISABLED,WS_EX_TRANSPARENT
+END
+
+IDD_SCREEN_SELECTION DIALOGEX 0, 0, 283, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 11
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG_COORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_DIALOG_CURVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_DIALOG_TEXT_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 383
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_ERASER       CURSOR                  "res\\cursor_eraser.cur"
+IDC_CURSOR_CHOOSE       CURSOR                  "res\\cursor_choose.cur"
+IDC_CURSOR_PEN          CURSOR                  "res\\cursor_pen.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_AS
+    SEPARATOR
+    BUTTON      ID_FILE_SNAP
+    SEPARATOR
+    BUTTON      ID_CALIBRATE_SETPOINT1
+    BUTTON      ID_CALIBRATE_SETPOINT2
+    SEPARATOR
+    BUTTON      ID_EDIT_COLOR_PICKER
+    BUTTON      ID_EDIT_ERASER
+    BUTTON      ID_EDIT_PEN
+    BUTTON      ID_EDIT_RESET
+    SEPARATOR
+    BUTTON      ID_CURVE_CHOOSECURVE
+    BUTTON      ID_CURVE_CHOOSERECTANGLE
+    BUTTON      ID_CURVE_CHOOSECOLOR
+    BUTTON      ID_CURVE_CHOOSEPOINTS
+    BUTTON      ID_CURVE_CLEARSELECTION
+    SEPARATOR
+    BUTTON      ID_CURVE_COPYDATA
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Snap",                       ID_FILE_SNAP
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "C&alibrate"
+    BEGIN
+        MENUITEM "Set Point &1",                ID_CALIBRATE_SETPOINT1
+        MENUITEM "Set Point &2",                ID_CALIBRATE_SETPOINT2
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Eraser",                     ID_EDIT_ERASER
+        MENUITEM "&Pen",                        ID_EDIT_PEN
+        MENUITEM "&Reset",                      ID_EDIT_RESET
+    END
+    POPUP "&Curve"
+    BEGIN
+        MENUITEM "Choose by Connectivity",      ID_CURVE_CHOOSECURVE
+        MENUITEM "Choose &Rectangle",           ID_CURVE_CHOOSERECTANGLE
+        MENUITEM "C&hoose by color",            ID_CURVE_CHOOSECOLOR
+        MENUITEM "Choose &points",              ID_CURVE_CHOOSEPOINTS
+        MENUITEM "Clear &Selection",            ID_CURVE_CLEARSELECTION
+        MENUITEM "Copy &Data",                  ID_CURVE_COPYDATA
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CurveSnap...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "XOOFEE"
+            VALUE "FileDescription", "Image Curve Extractor"
+            VALUE "FileVersion", "1.1"
+            VALUE "InternalName", "CurveSnap.exe"
+            VALUE "OriginalFilename", "CurveSnap.exe"
+            VALUE "ProductName", "CurveSnap"
+            VALUE "ProductVersion", "1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    ID_INDICATOR_CALIBRATE  "uncalibrated"
+    ID_INDICATOR_IMAGE_SIZE "image size"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CurveSnap\nUntitled\nCurveSnap\njpg bmp png tif pgm\n.*\nCurveSnap.Document\nCurveSnap.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CurveSnap"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CALIBRATE_SETPOINT1  "Set the first calibrating point\nFirst calibrating point"
+    ID_CALIBRATE_SETPOINT2  "Set the second calibrating point\nSecond calibrating point"
+    ID_EDIT_ERASER          "Erase the image to make the curve isolated\nEraser"
+    ID_EDIT_RESET           "Reset the image to the state before erasing\nReset"
+    ID_FILE_SNAP            "Capture a rectangle in the screen\nCapture"
+    ID_CURVE_CHOOSERECTANGLE 
+                            "Drag a rectangle to select data points\nChoose by rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CURVE_CHOOSECURVE    "Choose curve you want to extract by connectivity\nChoose curve by connectivity"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CURVE_CHOOSECOLOR    "Choose curve by the color near your click point\nChoose curve by color"
+    ID_CURVE_CLEARSELECTION "Clear current selected data points\nClear selection"
+    ID_CURVE_CHOOSEPOINTS   "Choose data points one by one manually\nChoose single data point"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "New\nNew"
+    ID_FILE_OPEN            "Open\nOpen a image"
+    ID_FILE_SAVE_AS         "Save as\nSave the image as"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\CurveSnap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

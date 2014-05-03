@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alglib\alglibinternal.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\alglibmisc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\ap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\integration.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\interpolation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\linalg.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\optimization.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\solvers.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="alglib\specialfunctions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="chart\ChartAxis.cpp" />
+    <ClCompile Include="chart\ChartAxisLabel.cpp" />
+    <ClCompile Include="chart\ChartBarSerie.cpp" />
+    <ClCompile Include="chart\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="chart\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="chart\ChartCtrl.cpp" />
+    <ClCompile Include="chart\ChartCursor.cpp" />
+    <ClCompile Include="chart\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="chart\ChartDragLineCursor.cpp" />
+    <ClCompile Include="chart\ChartFont.cpp" />
+    <ClCompile Include="chart\ChartGanttSerie.cpp" />
+    <ClCompile Include="chart\ChartGradient.cpp" />
+    <ClCompile Include="chart\ChartGrid.cpp" />
+    <ClCompile Include="chart\ChartLegend.cpp" />
+    <ClCompile Include="chart\ChartLineSerie.cpp" />
+    <ClCompile Include="chart\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="chart\ChartPointsSerie.cpp" />
+    <ClCompile Include="chart\ChartScrollBar.cpp" />
+    <ClCompile Include="chart\ChartSerie.cpp" />
+    <ClCompile Include="chart\ChartStandardAxis.cpp" />
+    <ClCompile Include="chart\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="chart\ChartTitle.cpp" />
+    <ClCompile Include="chart\ChartXYSerie.cpp" />
+    <ClCompile Include="CurveSnap\BitmapButtonEx.cpp" />
+    <ClCompile Include="CurveSnap\ChoosedView.cpp" />
+    <ClCompile Include="CurveSnap\CurveDlg.cpp" />
+    <ClCompile Include="CurveSnap\CurveSnap.cpp" />
+    <ClCompile Include="CurveSnap\CurveSnapDoc.cpp" />
+    <ClCompile Include="CurveSnap\CurveSnapView.cpp" />
+    <ClCompile Include="CurveSnap\cvx.cpp" />
+    <ClCompile Include="CurveSnap\DataDlg.cpp" />
+    <ClCompile Include="CurveSnap\DataProcessor.cpp" />
+    <ClCompile Include="CurveSnap\DialogCoord.cpp" />
+    <ClCompile Include="CurveSnap\EditEx.cpp" />
+    <ClCompile Include="CurveSnap\HwndShower.cpp" />
+    <ClCompile Include="CurveSnap\ImageConverter.cpp" />
+    <ClCompile Include="CurveSnap\ImageCurveExtractor.cpp" />
+    <ClCompile Include="CurveSnap\MainFrm.cpp" />
+    <ClCompile Include="CurveSnap\MainToolBar.cpp" />
+    <ClCompile Include="CurveSnap\PixelCoordConverter.cpp" />
+    <ClCompile Include="CurveSnap\PixelCoordPair.cpp" />
+    <ClCompile Include="CurveSnap\PlotView.cpp" />
+    <ClCompile Include="CurveSnap\ScreenImage.cpp" />
+    <ClCompile Include="CurveSnap\ScreenSelectionDialog.cpp" />
+    <ClCompile Include="CurveSnap\SnapTracker.cpp" />
+    <ClCompile Include="CurveSnap\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CurveSnap\XColorPickerXP.cpp" />
+    <ClCompile Include="CurveSnap\XColorPopupXP.cpp" />
+    <ClCompile Include="CurveSnap\xf.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alglib\alglibinternal.h" />
+    <ClInclude Include="alglib\alglibmisc.h" />
+    <ClInclude Include="alglib\ap.h" />
+    <ClInclude Include="alglib\integration.h" />
+    <ClInclude Include="alglib\interpolation.h" />
+    <ClInclude Include="alglib\linalg.h" />
+    <ClInclude Include="alglib\optimization.h" />
+    <ClInclude Include="alglib\solvers.h" />
+    <ClInclude Include="alglib\specialfunctions.h" />
+    <ClInclude Include="chart\ChartAddition.h" />
+    <ClInclude Include="chart\ChartAxis.h" />
+    <ClInclude Include="chart\ChartAxisLabel.h" />
+    <ClInclude Include="chart\ChartBalloonLabel.h" />
+    <ClInclude Include="chart\ChartBarSerie.h" />
+    <ClInclude Include="chart\ChartCandlestickSerie.h" />
+    <ClInclude Include="chart\ChartCommon.h" />
+    <ClInclude Include="chart\ChartCrossHairCursor.h" />
+    <ClInclude Include="chart\ChartCtrl.h" />
+    <ClInclude Include="chart\ChartCursor.h" />
+    <ClInclude Include="chart\ChartDateTimeAxis.h" />
+    <ClInclude Include="chart\ChartDragLineCursor.h" />
+    <ClInclude Include="chart\ChartFont.h" />
+    <ClInclude Include="chart\ChartGanttSerie.h" />
+    <ClInclude Include="chart\ChartGradient.h" />
+    <ClInclude Include="chart\ChartGrid.h" />
+    <ClInclude Include="chart\ChartLabel.h" />
+    <ClInclude Include="chart\ChartLegend.h" />
+    <ClInclude Include="chart\ChartLineSerie.h" />
+    <ClInclude Include="chart\ChartLogarithmicAxis.h" />
+    <ClInclude Include="chart\ChartMouseListener.h" />
+    <ClInclude Include="chart\ChartPointsArray.h" />
+    <ClInclude Include="chart\ChartPointsSerie.h" />
+    <ClInclude Include="chart\ChartScrollBar.h" />
+    <ClInclude Include="chart\ChartSerie.h" />
+    <ClInclude Include="chart\ChartSerieBase.h" />
+    <ClInclude Include="chart\ChartSeriesMouseListener.h" />
+    <ClInclude Include="chart\ChartStandardAxis.h" />
+    <ClInclude Include="chart\ChartString.h" />
+    <ClInclude Include="chart\ChartSurfaceSerie.h" />
+    <ClInclude Include="chart\ChartTitle.h" />
+    <ClInclude Include="chart\ChartXYSerie.h" />
+    <ClInclude Include="chart\PointsOrdering.h" />
+    <ClInclude Include="CurveSnap\BitmapButtonEx.h" />
+    <ClInclude Include="CurveSnap\ChoosedView.h" />
+    <ClInclude Include="CurveSnap\CurveDlg.h" />
+    <ClInclude Include="CurveSnap\CurveSnap.h" />
+    <ClInclude Include="CurveSnap\CurveSnapDoc.h" />
+    <ClInclude Include="CurveSnap\CurveSnapView.h" />
+    <ClInclude Include="CurveSnap\cvx.h" />
+    <ClInclude Include="CurveSnap\DataDlg.h" />
+    <ClInclude Include="CurveSnap\DataProcessor.h" />
+    <ClInclude Include="CurveSnap\DialogCoord.h" />
+    <ClInclude Include="CurveSnap\EditEx.h" />
+    <ClInclude Include="CurveSnap\HwndShower.h" />
+    <ClInclude Include="CurveSnap\ImageConverter.h" />
+    <ClInclude Include="CurveSnap\ImageCurveExtractor.h" />
+    <ClInclude Include="CurveSnap\MainFrm.h" />
+    <ClInclude Include="CurveSnap\MainToolBar.h" />
+    <ClInclude Include="CurveSnap\PixelCoordConverter.h" />
+    <ClInclude Include="CurveSnap\PixelCoordPair.h" />
+    <ClInclude Include="CurveSnap\PlotView.h" />
+    <ClInclude Include="CurveSnap\resource.h" />
+    <ClInclude Include="CurveSnap\ScreenImage.h" />
+    <ClInclude Include="CurveSnap\ScreenSelectionDialog.h" />
+    <ClInclude Include="CurveSnap\SnapTracker.h" />
+    <ClInclude Include="CurveSnap\stdafx.h" />
+    <ClInclude Include="CurveSnap\XColorPickerXP.h" />
+    <ClInclude Include="CurveSnap\XColorPopupXP.h" />
+    <ClInclude Include="CurveSnap\xf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chart\ChartBalloonLabel.inl" />
+    <None Include="chart\ChartLabel.inl" />
+    <None Include="chart\ChartPointsArray.inl" />
+    <None Include="chart\ChartSerieBase.inl" />
+    <None Include="CurveSnap\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CurveSnap\CurveSnap.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3DA7821F-BE41-4060-83FB-6905631AD9F6}</ProjectGuid>
+    <RootNamespace>CurveSnap</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EmbedManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">..\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4311;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\vendor\opencv\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opencv_core249d.lib;opencv_highgui249d.lib;opencv_imgproc249d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\vendor\opencv\lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\vendor\opencv\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opencv_core249.lib;opencv_highgui249.lib;opencv_imgproc249.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\vendor\opencv\lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Link>
+      <AdditionalLibraryDirectories>..\vendor\opencv\lib\</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\vendor\opencv\include</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CurveSnap.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
